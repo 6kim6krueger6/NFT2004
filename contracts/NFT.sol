@@ -23,7 +23,6 @@ import {ERC2981} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721Roy
 
 import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
 import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
-import {AutomationCompatibleInterface} from"@chainlink/contracts/src/v0.8/automation/interfaces/AutomationCompatibleInterface.sol";
 
 
 contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
@@ -35,8 +34,8 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     error TokenUriNotFound();
 
     uint256 private s_tokenCounter;
-    uint256 private s_randomNumber;
 
+    uint256 private MINT_PRICE = 0.01 ether;
     bytes32 private constant MERKLE_ROOT = 0x10c2354320c3fa1945a8c52afcf0f38ef048959a4fab28f8c62191f0a1d1f065;
     uint96 public constant ROYALTY_PERCENTAGE = 500; // 5% (500 / 10000)
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
@@ -67,13 +66,12 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
         if(!verify(proof)) {
             revert addressNotFound();
         }
-        if(msg.value != 0.01 ether) {
+        if(msg.value != MINT_PRICE) {
             revert notEnoughFunds();
         }
         string memory tokenUri;
-        uint256 _randomNumber;
-        // _randomNumber = requestRandomWords();
-        _randomNumber = s_randomNumber % 1000;
+        uint256 _randomNumber = requestRandomWords();
+        _randomNumber %= 1000;
         
         s_tokenToUri[s_tokenCounter] = tokenUri;
         _safeMint(msg.sender, s_tokenCounter);
@@ -123,7 +121,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     }
 
 
-     function requestRandomWords() internal onlyOwner returns (uint256 requestId) {
+     function requestRandomWords() internal returns (uint256 requestId) {
         requestId = s_vrfCoordinator.requestRandomWords(
             VRFV2PlusClient.RandomWordsRequest({
                 keyHash: KEY_HASH,
@@ -140,7 +138,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     }
 
     function fulfillRandomWords(uint256 requestId, uint256[] calldata randomWords) internal override  {
-        s_randomNumber = randomWords[0];
+        requestId = randomWords[0];
         emit RequestFulfilled(requestId, randomWords);
     }
 
