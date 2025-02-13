@@ -26,7 +26,7 @@ import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/V
 import {AutomationCompatibleInterface} from"@chainlink/contracts/src/v0.8/automation/interfaces/AutomationCompatibleInterface.sol";
 
 
-contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus, AutomationCompatibleInterface{
+contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     error addressNotFound();
     error notEnoughFunds();
     error alreadyMinted();
@@ -59,7 +59,8 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus, AutomationCompatibleInte
         _setDefaultRoyalty(msg.sender, ROYALTY_PERCENTAGE);
     }
 
-    function mint(bytes32[] calldata proof) public payable {
+
+    function safeMint(bytes32[] calldata proof) public payable {
         if(s_hasMinted[msg.sender]) {
             revert alreadyMinted();
         }
@@ -120,6 +121,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus, AutomationCompatibleInte
             revert failedWithdrawal();
         }
     }
+
 
      function requestRandomWords() internal onlyOwner returns (uint256 requestId) {
         requestId = s_vrfCoordinator.requestRandomWords(
