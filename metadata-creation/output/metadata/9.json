@@ -1,0 +1,26 @@
+{
+    "image": "ipfs://QmNe46kByhZ2ptgxK1TsG8TKHpACeQHcLW52mxvwKzkoTs",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "background"
+        },
+        {
+            "trait_type": "body",
+            "value": "body"
+        },
+        {
+            "trait_type": "head",
+            "value": "head"
+        },
+        {
+            "trait_type": "eyes",
+            "value": "eyesRed"
+        },
+        {
+            "trait_type": "mouth",
+            "value": "mouth"
+        }
+    ],
+    "name": "NFT #9"
+}
