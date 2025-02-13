@@ -1,8 +1,0 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Голова -->
-  <circle cx="100" cy="70" r="40" fill="#f4c2a1"/>
-
-  <!-- Руки -->
-  <rect x="50" y="110" width="20" height="60" fill="#f4c2a1" rx="10" ry="10"/> <!-- Левая рука -->
-  <rect x="130" y="110" width="20" height="60" fill="#f4c2a1" rx="10" ry="10"/> <!-- Правая рука -->
-</svg>
