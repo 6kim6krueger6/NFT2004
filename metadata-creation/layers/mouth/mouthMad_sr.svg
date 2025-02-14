@@ -1,8 +1,0 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Злая улыбка -->
-  <path d="M 85 85 Q 100 70 115 85" stroke="#000" stroke-width="2" fill="none"/>
-  
-  <!-- Прямые наклоненные вверх к центру брови -->
-  <line x1="75" y1="40" x2="100" y2="45" stroke="#000" stroke-width="3"/> <!-- Левая бровь -->
-  <line x1="100" y1="45" x2="125" y2="40" stroke="#000" stroke-width="3"/> <!-- Правая бровь -->
-</svg>

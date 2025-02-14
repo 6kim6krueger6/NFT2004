@@ -3,6 +3,7 @@
 // imports
 // errors
 // interfaces, libraries, contracts
+// Type declarations
 // State variables
 // Events
 // Modifiers
@@ -24,7 +25,7 @@ import {ERC2981} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721Roy
 import {VRFConsumerBaseV2Plus} from "chainlink-brownie-contracts/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
 import {VRFV2PlusClient} from "chainlink-brownie-contracts/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
 
-
+//https://ipfs.io/ipfs/QmNZ5FcyWbjhHAWKf494M45f9nUedSmxzwMkah71W1r2U9/ .json
 contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     error addressNotFound();
     error notEnoughFunds();
@@ -32,8 +33,15 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     error uriNotFound();
     error failedWithdrawal();
     error TokenUriNotFound();
+    error mintIsOver();
+
+    enum MintState{
+        OPEN,
+        CLOSED
+    }
 
     uint256 private s_tokenCounter;
+    uint256 private s_mintDeadline;
 
     uint256 private MINT_PRICE = 0.01 ether;
     bytes32 private constant MERKLE_ROOT = 0x10c2354320c3fa1945a8c52afcf0f38ef048959a4fab28f8c62191f0a1d1f065;
@@ -45,10 +53,13 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     bytes32 private constant KEY_HASH = 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae;
     uint32 private constant GAS_LIMIT = 100000;
 
+    uint256 public constant MINT_TIME = 30 days;
+
+    MintState public s_mintState;
+
     mapping (uint256 tokenId => string tokenUri) s_tokenToUri;
     mapping (address account => bool) s_hasMinted;
 
-    // bytes32[] private  URI = ["ipfs://QmcTDhcEFkgqVVvhR8r7HCQrekQosvaf3CeKGs9v2PkDgD", "ipfs://QmYkw7Ee9zQnRTQqgj1WT4Q3XzPnPsqmUQbzckTHuKv578", "ipfs://QmcpPL1t3BjiFc7DmDF4WVMTmVYXEfyuhQR1bTwZqM5k7p", "ipfs://QmW7uTp8fB3pK5W6en1wiDrYrBeud9Xn6eHtGo4WnnSVc3", "ipfs://QmSQsjHhBW55JHhpKaf2AaV5nnxe6kuPy3JnfArVRXAdKT", "ipfs://QmRd1pACc4W2x9Do7vuRyHDb4gkjwmNCR8vwiZBS19itVY", "ipfs://QmVakoFq3vE6v7apjmFC5bHo3SbWrhGgKin7WJRH8cp7hy", "ipfs://QmYdxYdXqM4gF6bNQJXTiFEhAbGLebFDSuefiXu4vf5ice", "ipfs://QmRk1Pcs6iu9jhkoYoM6dT1H2t5iEHnnKL7R6F5vc16jtP", "ipfs://QmQqV67AjhcdGAkNDMA6tm7LrkRaRr6z3jBTsK8acEjZRR"];
 
     event CreatedNFT(uint256 indexed tokenId);
     event RequestFulfilled(uint256 indexed requestId, uint256[] randomWords);
@@ -56,30 +67,43 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
     constructor()  ERC721("Monad Blasters", "MB") VRFConsumerBaseV2Plus(0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B)  {
         s_tokenCounter = 0;
         _setDefaultRoyalty(msg.sender, ROYALTY_PERCENTAGE);
+        s_mintDeadline = block.timestamp + MINT_TIME;
+        s_mintState = MintState.OPEN;
     }
 
 
-    function safeMint(bytes32[] calldata proof) public payable {
+    function safeMint() public payable {
+        if(block.timestamp > s_mintDeadline) {
+            s_mintState = MintState.CLOSED;
+            revert mintIsOver();
+        }
+
         if(s_hasMinted[msg.sender]) {
             revert alreadyMinted();
         }
-        if(!verify(proof)) {
-            revert addressNotFound();
-        }
+        
         if(msg.value != MINT_PRICE) {
             revert notEnoughFunds();
         }
-        string memory tokenUri;
-        uint256 _randomNumber = requestRandomWords();
-        _randomNumber %= 1000;
-        
+
+        uint256 requestId = requestRandomWords();
+        uint256 randomIndex = requestId % 1000; 
+
+        string memory tokenUri = string(abi.encodePacked(_baseURI(), string(abi.encodePacked(randomIndex, ".json"))));
         s_tokenToUri[s_tokenCounter] = tokenUri;
+
         _safeMint(msg.sender, s_tokenCounter);
         s_hasMinted[msg.sender] = true;
-        
+
         s_tokenCounter++;
+
         emit CreatedNFT(s_tokenCounter);
     }
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://ipfs.io/ipfs/QmNZ5FcyWbjhHAWKf494M45f9nUedSmxzwMkah71W1r2U9/";
+    }
+
 
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
         if (ownerOf(tokenId) == address(0)) {
@@ -110,10 +134,14 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
         _setDefaultRoyalty(receiver, feeNumerator);
     }
 
-    function withdraw() external onlyOwner {
+    function withdraw(bytes32[] calldata proof) external {
         if(address(this).balance == 0) {
             revert notEnoughFunds();
         }
+        if(!verify(proof)) {
+            revert addressNotFound();
+        }
+
         (bool success, ) = msg.sender.call{value: address(this).balance}("");
         if (!success) {
             revert failedWithdrawal();
@@ -137,9 +165,12 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus{
         return requestId;
     }
 
-    function fulfillRandomWords(uint256 requestId, uint256[] calldata randomWords) internal override  {
-        requestId = randomWords[0];
+    function fulfillRandomWords(uint256 requestId, uint256[] calldata randomWords) internal override {
         emit RequestFulfilled(requestId, randomWords);
-    }
+}
 
+
+    function getMintState() public view returns (MintState) {
+        return s_mintState;
+    }
 }

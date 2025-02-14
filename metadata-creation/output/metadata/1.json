@@ -1,25 +1,37 @@
 {
-    "image": "ipfs://QmVn1J42ThJ2EZVnmbCSf1ZtfktEXogGtfZgv7nTVVnBSr",
+    "image": "ipfs://QmaWhqJZNar2vdWQ9K2KGxd8TkTSdTDpchVqtPkcDnmz5r",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "background"
+            "value": "background2"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "body"
+            "value": "bodyRed"
         },
         {
-            "trait_type": "head",
-            "value": "head"
+            "trait_type": "face",
+            "value": "face"
         },
         {
-            "trait_type": "eyes",
-            "value": "eyesGreen"
+            "trait_type": "beard",
+            "value": "beard1"
         },
         {
-            "trait_type": "mouth",
-            "value": "mouth"
+            "trait_type": "hat",
+            "value": "hat2"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "accrs1"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "shirt"
         }
     ],
     "name": "NFT #1"

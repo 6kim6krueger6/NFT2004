@@ -1,25 +1,37 @@
 {
-    "image": "ipfs://QmQFBsaLQw931Awkfbrr4w445Buh9QqtVJM3Bfz9eWcC4x",
+    "image": "ipfs://QmQPFxSubgXDuFcr31zAxv8UzsvTtwsSCboavTaA3DPGEb",
     "attributes": [
         {
             "trait_type": "background",
             "value": "background"
         },
         {
+            "trait_type": "spine",
+            "value": "spineGreenSquare"
+        },
+        {
             "trait_type": "body",
-            "value": "body"
+            "value": "body_green"
         },
         {
-            "trait_type": "head",
-            "value": "head"
+            "trait_type": "face",
+            "value": "face2"
         },
         {
-            "trait_type": "eyes",
-            "value": "eyesSuperRare"
+            "trait_type": "beard",
+            "value": "beard1"
         },
         {
-            "trait_type": "mouth",
-            "value": "mouth"
+            "trait_type": "hat",
+            "value": "hat3"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "accrs2"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "shirt"
         }
     ],
     "name": "NFT #3"

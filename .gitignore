@@ -1,1 +1,16 @@
 node_modules
+package-lock.json
+
+# Foundry
+lib/
+out/
+cache/
+broadcast/
+forge-artifacts/
+forge-cache/
+foundry.toml
+
+# Environment variables
+.env
+.env.local
+.env.*.local

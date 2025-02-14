@@ -1,6 +1,6 @@
 const fs = require('fs');
-const width = 200;
-const height = 200;
+const width = 1000;
+const height = 1000;
 const dir = __dirname;
 
 const rarity = [
@@ -56,6 +56,17 @@ const layers = [
     },
     {
         id: 2,
+        name: 'spine',
+        location: `${dir}/layers/spine/`,
+        elements:getElements(`${dir}/layers/spine/`),
+        position : {
+            x: 0,
+            y: 0
+        },
+        size: {width: width, height: height},
+    },
+    {
+        id: 3,
         name: 'body',
         location: `${dir}/layers/body/`,
         elements:getElements(`${dir}/layers/body/`),
@@ -66,21 +77,10 @@ const layers = [
         size: {width: width, height: height},
     },
     {
-        id: 3,
-        name: 'head',
-        location: `${dir}/layers/head/`,
-        elements:getElements(`${dir}/layers/head/`),
-        position : {
-            x: 0,
-            y: 0
-        },
-        size: {width: width, height: height},
-    },
-    {
         id: 4,
-        name: 'eyes',
-        location: `${dir}/layers/eyes/`,
-        elements:getElements(`${dir}/layers/eyes/`),
+        name: 'face',
+        location: `${dir}/layers/face/`,
+        elements:getElements(`${dir}/layers/face/`),
         position : {
             x: 0,
             y: 0
@@ -89,9 +89,42 @@ const layers = [
     },
     {
         id: 5,
-        name: 'mouth',
-        location: `${dir}/layers/mouth/`,
-        elements:getElements(`${dir}/layers/mouth/`),
+        name: 'beard',
+        location: `${dir}/layers/beard/`,
+        elements:getElements(`${dir}/layers/beard/`),
+        position : {
+            x: 0,
+            y: 0
+        },
+        size: {width: width, height: height},
+    },
+    {
+        id: 6,
+        name: 'hat',
+        location: `${dir}/layers/hat/`,
+        elements:getElements(`${dir}/layers/hat/`),
+        position : {
+            x: 0,
+            y: 0
+        },
+        size: {width: width, height: height},
+    },
+    {
+        id: 7,
+        name: 'accessories',
+        location: `${dir}/layers/accessories/`,
+        elements:getElements(`${dir}/layers/accessories/`),
+        position : {
+            x: 0,
+            y: 0
+        },
+        size: {width: width, height: height},
+    },
+    {
+        id: 8,
+        name: 'clothes',
+        location: `${dir}/layers/clothes/`,
+        elements:getElements(`${dir}/layers/clothes/`),
         position : {
             x: 0,
             y: 0

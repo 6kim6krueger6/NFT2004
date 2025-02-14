@@ -1,25 +1,37 @@
 {
-    "image": "ipfs://QmVAFTrKuDYiMpNfxqtDz7aUfNCzdvVe7PHz3AYg2RrQiV",
+    "image": "ipfs://QmZHf5yYvdKte2KwETUEACFKZ15zhgWG31qeDVPfobG5ZK",
     "attributes": [
         {
             "trait_type": "background",
             "value": "background"
         },
         {
+            "trait_type": "spine",
+            "value": "spineDefaultSquare"
+        },
+        {
             "trait_type": "body",
-            "value": "body"
+            "value": "body_green"
         },
         {
-            "trait_type": "head",
-            "value": "headBlack"
+            "trait_type": "face",
+            "value": "face"
         },
         {
-            "trait_type": "eyes",
-            "value": "eyesWhite"
+            "trait_type": "beard",
+            "value": "beard2"
         },
         {
-            "trait_type": "mouth",
-            "value": "mouth"
+            "trait_type": "hat",
+            "value": "hat3"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "accrs1"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "shirt"
         }
     ],
     "name": "NFT #2"
