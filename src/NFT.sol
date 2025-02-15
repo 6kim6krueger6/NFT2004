@@ -31,6 +31,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         address minter;
     }
 
+    uint256 public s_subId;
     uint256 private s_tokenCounter;
     uint256 private s_mintDeadline;
     uint256 private s_lastRequestId; // ID последнего отправленного реквеста
@@ -39,6 +40,8 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
 
     uint256 private constant MINT_PRICE = 0.01 ether;
     bytes32 private constant MERKLE_ROOT = 0x10c2354320c3fa1945a8c52afcf0f38ef048959a4fab28f8c62191f0a1d1f065;
+    bytes32 private constant ANVIL_ROOT = 0xd4453790033a2bd762f526409b7f358023773723d9e9bc42487e4996869162b6;
+
     uint96 public constant ROYALTY_PERCENTAGE = 500; // 5% (500 / 10000)
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
     uint32 private constant NUM_WORDS = 1; // количество чисел в запросе
@@ -56,12 +59,13 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     event CreatedNFT(uint256 indexed tokenId);
     event RequestFulfilled(uint256 indexed requestId, uint256[] randomWords);
 
-    constructor(address _vrfCoordinator) ERC721("Dinads BOS", "DB") VRFConsumerBaseV2Plus(_vrfCoordinator) {
+    constructor(address _vrfCoordinator, uint256 _subId) ERC721("Dinads BOS", "DB") VRFConsumerBaseV2Plus(_vrfCoordinator) {
         s_tokenCounter = 0;
         _setDefaultRoyalty(msg.sender, ROYALTY_PERCENTAGE);
         s_mintDeadline = block.timestamp + MINT_TIME;
         s_mintState = MintState.OPEN;
         vrfCoordinator = _vrfCoordinator;
+        s_subId = _subId;
     }
 
     function safeMint() public payable {
@@ -100,7 +104,8 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         return
             MerkleProof.verify(
                 _proof,
-                MERKLE_ROOT,
+                // MERKLE_ROOT,
+                ANVIL_ROOT,
                 keccak256(abi.encodePacked(msg.sender))
             );
     }
@@ -136,7 +141,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         requestId = s_vrfCoordinator.requestRandomWords(
             VRFV2PlusClient.RandomWordsRequest({
                 keyHash: KEY_HASH,
-                subId: SUB_ID,
+                subId: s_subId,
                 requestConfirmations: REQUEST_CONFIRMATIONS,
                 callbackGasLimit: GAS_LIMIT,
                 numWords: NUM_WORDS,

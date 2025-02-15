@@ -11,7 +11,7 @@ contract NFTdeploy is Script {
 
     function run() public {
         vm.startBroadcast();
-        nft = new NFT(0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B);
+        nft = new NFT(0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B,100989143403752757787427797522328206917911361128080942187540010049546367787741);
         vm.stopBroadcast();
     }
 }
