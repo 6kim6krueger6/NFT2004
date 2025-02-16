@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmaWhqJZNar2vdWQ9K2KGxd8TkTSdTDpchVqtPkcDnmz5r",
+    "image": "ipfs://QmQq2te3b8X9X5MsmC7iqfEpU28U4buummY6zfUeQgeia3",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "background2"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
@@ -15,23 +15,23 @@
         },
         {
             "trait_type": "face",
-            "value": "face"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "hat2"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
-            "value": "accrs1"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "shirt"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #1"

@@ -1,5 +1,33 @@
+// Layout of Contract:
+// version
+// imports
+// errors
+// interfaces, libraries, contracts
+// Type declarations
+// State variables
+// mappings
+// Events
+// Functions
+
+// Layout of Functions:
+// constructor
+// receive function (if exists)
+// fallback function (if exists)
+// external
+// public
+// internal
+// private
+// view & pure functions
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
+
+/**
+ * @dev Generative NFT contract, with royalty and VRF
+ * created by https://github.com/6kim6krueger6
+ * visit https://github.com/6kim6krueger6/NFT2004 for more info
+ * @title created specially for Monad EVM acathon
+ */
 
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import {MerkleProof} from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
@@ -18,11 +46,13 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     error mintIsOver();
     error requestNotFound();
 
+    //MINT INFORMATION
     enum MintState {
         OPEN,
         CLOSED
     }
 
+    //VRF INFORMATION
     struct RequestStatus {
         bool fulfilled; 
         bool exists; 
@@ -30,26 +60,29 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         address minter;
     }
 
-    uint256 public s_subId;
+    uint256 private s_subId;
     uint256 private s_tokenCounter;
-    uint256 private s_mintDeadline;
-    uint256 private s_lastRequestId; // ID последнего отправленного реквеста
+    uint256 private s_lastRequestId; 
     address private vrfCoordinator;
-    MintState public s_mintState;
 
+    MintState public s_mintState;
+    uint256 public immutable i_mintDeadline;
     uint256 private constant MINT_PRICE = 0.01 ether;
+    uint256 public constant MINT_TIME = 30 days;
+
+    //MERKLE ROOTS
     bytes32 private constant MERKLE_ROOT = 0x10c2354320c3fa1945a8c52afcf0f38ef048959a4fab28f8c62191f0a1d1f065;
     bytes32 private constant ANVIL_ROOT = 0xd4453790033a2bd762f526409b7f358023773723d9e9bc42487e4996869162b6;
 
-    uint96 public constant ROYALTY_PERCENTAGE = 500; // 5% (500 / 10000)
+    uint96 public constant ROYALTY_PERCENTAGE = 500; 
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
-    uint32 private constant NUM_WORDS = 1; // количество чисел в запросе
+    uint32 private constant NUM_WORDS = 1; 
 
-    uint256 private constant SUB_ID = 100989143403752757787427797522328206917911361128080942187540010049546367787741;
+    //CHAINLINK VARIABLES
     bytes32 private constant KEY_HASH = 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae;
-    uint32 private constant GAS_LIMIT = 500000000;
+    uint32 private constant GAS_LIMIT = 1000000;
 
-    uint256 public constant MINT_TIME = 30 days;
+   
 
     mapping(uint256 tokenId => string tokenUri) s_tokenToUri;
     mapping(address account => bool) s_hasMinted;
@@ -62,14 +95,15 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     constructor(address _vrfCoordinator, uint256 _subId) ERC721("Dinads BOS", "DB") VRFConsumerBaseV2Plus(_vrfCoordinator) {
         s_tokenCounter = 0;
         _setDefaultRoyalty(msg.sender, ROYALTY_PERCENTAGE);
-        s_mintDeadline = block.timestamp + MINT_TIME;
+        i_mintDeadline = block.timestamp + MINT_TIME;
         s_mintState = MintState.OPEN;
         vrfCoordinator = _vrfCoordinator;
         s_subId = _subId;
     }
 
+    //MINT FUNCTION
     function safeMint() public payable {
-        if (block.timestamp > s_mintDeadline) {
+        if (block.timestamp > i_mintDeadline) {
             s_mintState = MintState.CLOSED;
             revert mintIsOver();
         }
@@ -90,7 +124,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     }
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://ipfs.io/ipfs/QmNZ5FcyWbjhHAWKf494M45f9nUedSmxzwMkah71W1r2U9/";
+        return "https://ipfs.io/ipfs/QmQa65BHyrEjTr3xLM1gm1bDCepiqcCvwaBNRyRbGfEg7W/";
     }
 
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
@@ -170,11 +204,10 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         request.randomWords = randomWords;
 
         address minter = request.minter;
-        uint256 uriId = randomWords[0] % 1000;
+        uint256 uriId = randomWords[0] % 100;
 
-        // Если uriId уже существует, пытаемся найти свободный
         while (s_UriExists[uriId]) {
-            uriId = uint256(keccak256(abi.encode(randomWords[0], uriId, block.timestamp))) % 1000;
+            uriId = uint256(keccak256(abi.encode(randomWords[0], uriId, block.timestamp))) % 100;
         }
 
         string memory tokenUri = string(abi.encodePacked(_baseURI(), Strings.toString(uriId), ".json"));
@@ -194,5 +227,17 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
 
     function getMintState() public view returns (MintState) {
         return s_mintState;
+    }
+
+    function getSubId() public view returns (uint256) {
+        return s_subId;
+    }
+
+    function getVrfCoordinator() public view returns (address) {
+        return address(vrfCoordinator);
+    }
+
+    function getTokenCounter() public view returns (uint256) {
+        return s_tokenCounter;
     }
 }

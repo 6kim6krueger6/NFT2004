@@ -7,7 +7,7 @@ const metadataFilePathTxt = "./output/metadata_links.txt";
 
 const API_KEY = "62ad575ad3824bda9e8e";
 const API_SECRET = "f5c9ba632943211ed4d4711965566a57b2aec38b3cb005ca2aa0ab1b2f8a4046";
-const edition = 5; // Количество NFT
+const edition = 100; // Количество NFT
 const canvas = createCanvas(width, height);
 const ctx = canvas.getContext("2d");
 

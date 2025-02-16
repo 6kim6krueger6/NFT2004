@@ -89,9 +89,8 @@ contract NFTTest is Test {
 
     function testOnlyChosenCanWithdraw() public userMinted {
         vm.startPrank(owner);
+        vm.expectRevert(NFT.addressNotFound.selector);
         nft.withdraw(proof);
-        assertEq(address(nft).balance, 0);
-        assertEq(address(owner).balance, 0.01 ether);
         vm.stopPrank();
     }
 

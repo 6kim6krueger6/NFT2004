@@ -1,37 +1,37 @@
 {
-    "image": "ipfs://QmT4AHN7GSaq9VcpAYnKNXwtTrtRN4AnLiynp9eNQBSh18",
+    "image": "ipfs://QmdGGMi9TtdubTHHEH7DhvWvBZ7m9qp1haKYbXFLLPUq9q",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "background2"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
-            "value": "body_green"
+            "value": "bodyBlue"
         },
         {
             "trait_type": "face",
-            "value": "face"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
-            "value": "beard2"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "hat3"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
-            "value": "accrs2"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "shirt"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #5"
