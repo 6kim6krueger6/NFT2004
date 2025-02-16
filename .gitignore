@@ -14,3 +14,4 @@ foundry.toml
 .env
 .env.local
 .env.*.local
+.env

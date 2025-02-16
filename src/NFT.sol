@@ -13,7 +13,6 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     error addressNotFound();
     error notEnoughFunds();
     error alreadyMinted();
-    error uriNotFound();
     error failedWithdrawal();
     error TokenUriNotFound();
     error mintIsOver();
@@ -55,6 +54,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     mapping(uint256 tokenId => string tokenUri) s_tokenToUri;
     mapping(address account => bool) s_hasMinted;
     mapping(uint256 => RequestStatus) public s_requests;
+    mapping(uint256 => bool) public s_UriExists;
 
     event CreatedNFT(uint256 indexed tokenId);
     event RequestFulfilled(uint256 indexed requestId, uint256[] randomWords);
@@ -95,7 +95,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
 
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
         if (ownerOf(tokenId) == address(0)) {
-            revert uriNotFound();
+            revert ERC721NonexistentToken(tokenId);
         }
         return s_tokenToUri[tokenId];
     }
@@ -104,8 +104,8 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         return
             MerkleProof.verify(
                 _proof,
-                // MERKLE_ROOT,
-                ANVIL_ROOT,
+                MERKLE_ROOT,
+                // ANVIL_ROOT,
                 keccak256(abi.encodePacked(msg.sender))
             );
     }
@@ -170,9 +170,16 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         request.randomWords = randomWords;
 
         address minter = request.minter;
-        // uint256 uriId = randomWords[0] % 10000;
-        string memory tokenUri = string(abi.encodePacked(_baseURI(), Strings.toString(1), ".json"));//uriId
+        uint256 uriId = randomWords[0] % 1000;
 
+        // Если uriId уже существует, пытаемся найти свободный
+        while (s_UriExists[uriId]) {
+            uriId = uint256(keccak256(abi.encode(randomWords[0], uriId, block.timestamp))) % 1000;
+        }
+
+        string memory tokenUri = string(abi.encodePacked(_baseURI(), Strings.toString(uriId), ".json"));
+
+        s_UriExists[uriId] = true;
         s_tokenToUri[s_tokenCounter] = tokenUri;
         _safeMint(minter, s_tokenCounter);
         s_tokenCounter++;
@@ -181,7 +188,7 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
         emit CreatedNFT(s_tokenCounter - 1);
     }
 
-    function getLetestRequestId() public view returns (uint256) {
+    function getLatestRequestId() public view returns (uint256) {
         return s_lastRequestId;
     }
 
