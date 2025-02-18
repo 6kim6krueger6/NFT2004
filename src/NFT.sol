@@ -66,23 +66,25 @@ contract NFT is ERC721, ERC2981, VRFConsumerBaseV2Plus {
     address private vrfCoordinator;
 
     MintState public s_mintState;
+
     uint256 public immutable i_mintDeadline;
     uint256 private constant MINT_PRICE = 0.01 ether;
     uint256 public constant MINT_TIME = 30 days;
+    uint96 public constant ROYALTY_PERCENTAGE = 500; 
+
 
     //MERKLE ROOTS
     bytes32 private constant MERKLE_ROOT = 0x10c2354320c3fa1945a8c52afcf0f38ef048959a4fab28f8c62191f0a1d1f065;
     bytes32 private constant ANVIL_ROOT = 0xd4453790033a2bd762f526409b7f358023773723d9e9bc42487e4996869162b6;
 
-    uint96 public constant ROYALTY_PERCENTAGE = 500; 
-    uint16 private constant REQUEST_CONFIRMATIONS = 3;
-    uint32 private constant NUM_WORDS = 1; 
+   
 
     //CHAINLINK VARIABLES
     bytes32 private constant KEY_HASH = 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae;
     uint32 private constant GAS_LIMIT = 1000000;
+    uint16 private constant REQUEST_CONFIRMATIONS = 3;
+    uint32 private constant NUM_WORDS = 1; 
 
-   
 
     mapping(uint256 tokenId => string tokenUri) s_tokenToUri;
     mapping(address account => bool) s_hasMinted;
