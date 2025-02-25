@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmVMEUZAAdmzVD67VKDsnK5iNqQosiX6p1jTqmGHVcD6WT",
+    "image": "ipfs://QmTpLjWqqatxH885dYmDtsrW7fqeHWH19mQQzKCJHos6fc",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "beard2"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #44"

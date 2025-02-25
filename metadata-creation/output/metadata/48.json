@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmPVSeM4Kbwspya7AWQq9yyfLEMFrBRE3a1nrxNkmTAbxi",
+    "image": "ipfs://QmQnK9gZv6ikQm7dyxEM4hmeNRBmxGjMk1voxW96416m22",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineRedSquare"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #48"

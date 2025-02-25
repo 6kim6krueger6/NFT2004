@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmZiH7mHJYFdn3SVwTHZwrg3jJZNDmwfUW2ZzPdQJsEeWY",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineBlue"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "pokerFace"
+        },
+        {
+            "trait_type": "beard",
+            "value": "beard1"
+        },
+        {
+            "trait_type": "hat",
+            "value": "no_hat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "glasses"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #153"
+}

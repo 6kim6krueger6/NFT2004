@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmY5Mg7eswYQjw8M39eXRM2dcfQ8bFSjPWek8ujA8Q7qBf",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineBlue"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "angry"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "winterHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #187"
+}

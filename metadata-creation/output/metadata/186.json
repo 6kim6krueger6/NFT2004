@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmPfgKC4HTmihoWSC3NXFiQHBknyX41zbqWE4EHFF6EvZ6",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "purple"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineDefault"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "pokerFace"
+        },
+        {
+            "trait_type": "beard",
+            "value": "beard1"
+        },
+        {
+            "trait_type": "hat",
+            "value": "winterHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #186"
+}

@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmUQQf9kzJyVck4Xfsu4zVFb7Q4PvbUerHiXmFNCUwvLga",
+    "image": "ipfs://QmPuTpUiDsqEAEnZywL4fDCdbaxHVeW3dU7hCvHZA972kT",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "patch"
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #90"

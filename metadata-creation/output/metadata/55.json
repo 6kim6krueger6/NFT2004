@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmTP748vwHEHjN9mHRf8VXBzkNYe9gCnVvv8Z7Rztby6Fj",
+    "image": "ipfs://QmXEsC6YiiB7s5QGZA67rHo9tzLCbt9qrdK4cksxkyVK4J",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineRed"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -19,7 +19,7 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard2"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #55"

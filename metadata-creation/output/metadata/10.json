@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmX84ALkM266xcmtJFikSc5RGo2gWuVbpB9o4iY9R2h4NL",
+    "image": "ipfs://QmetYRVEstpAbUfWoZf6ReRW9QmQQ3ExEFcwPQVU3Xcsr9",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "surprised"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #10"

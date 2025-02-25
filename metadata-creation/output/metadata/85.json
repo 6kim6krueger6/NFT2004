@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmTsGsMzs14yWYr17ecSXXnTvbckD5cXWqiP14dkYB9eRR",
+    "image": "ipfs://QmevYcs4orbrYjzgvmpucN1SetCEkQCiGrNEMBY4JGEmCx",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
@@ -15,11 +15,11 @@
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard3"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",

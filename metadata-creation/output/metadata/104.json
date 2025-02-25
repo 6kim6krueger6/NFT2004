@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmTVWLKYMeqcgi9DUpTU1H7CkUeRXdwidn7nGfNGQ9iD7u",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineRed"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "pokerFace"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "winterHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "monocle"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #104"
+}

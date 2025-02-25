@@ -1,17 +1,17 @@
 {
-    "image": "ipfs://QmaEn73KLaLaxX1U29KLr3pWmS6sGj61JZcKEcYUyL5w8K",
+    "image": "ipfs://QmbSXJTpUbC9hitaAYdJ3J6r8EDyTCZ4drn4JzbLVethvy",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineBlueSquare"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyBlue"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #36"

@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://Qmde68aTZ1jz5UbbvrgkhAYbXDwgviv5ModKstSsxfxH9V",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "purple"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineDefaultSquare"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGold"
+        },
+        {
+            "trait_type": "face",
+            "value": "happy"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "adventureHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "glasses"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "alkawka"
+        }
+    ],
+    "name": "NFT #113"
+}

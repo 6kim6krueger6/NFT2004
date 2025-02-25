@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmS9rRD8GCnddYCCpP69xWU7G2Dj81SsK12SGFzzYXWKpo",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineGreen"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "surprised"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "winterHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "alkawka"
+        }
+    ],
+    "name": "NFT #105"
+}

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmeU4sGcZc61HS4eAVqWsez9VY9eqGjE5rHCvjjYKV3F38",
+    "image": "ipfs://QmWCaZmjz49fsJqzMseFGqB43iCf2KQEgmxxLAeANCvTJR",
     "attributes": [
         {
             "trait_type": "background",
@@ -15,19 +15,19 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",

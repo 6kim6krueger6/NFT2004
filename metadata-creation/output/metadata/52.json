@@ -1,17 +1,17 @@
 {
-    "image": "ipfs://QmPC9hLrWf4WCnCnyxxXA58u7CtE17i732GUvmv6XBNJWe",
+    "image": "ipfs://QmZUeM7ETPT2pNhxodeH2VyBpdq3SvuXrYzA1NRSQrYS86",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "gold"
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyBlue"
         },
         {
             "trait_type": "face",
@@ -19,19 +19,19 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #52"

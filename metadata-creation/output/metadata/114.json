@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmdsfoGtiopYqakEByVhESuoXAeEqPw9e7v7NW7Ks812BF",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineBlue"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyRed"
+        },
+        {
+            "trait_type": "face",
+            "value": "happy"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "no_hat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "glasses"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #114"
+}

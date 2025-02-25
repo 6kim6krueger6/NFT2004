@@ -1,9 +1,9 @@
 {
-    "image": "ipfs://QmSeD61KsveaBQxum2mTVKRWrxjdTZUzdaYmj3swuNjYTW",
+    "image": "ipfs://QmW5Dp6LTgAoXuSHAcKkWBRn5Kieed32k6CwRd5Ag9Wmjx",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "gold"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
@@ -23,15 +23,15 @@
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #30"

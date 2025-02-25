@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmQFoprLL56gsD5wgwaaGUxZ4xmbAeqnkEpjw1qjB3Ny6X",
+    "image": "ipfs://Qmb6Jpk7dDWiTry1ap85kqym94QjjqBhBGAu1BbA4DVmmz",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineRed"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -15,23 +15,23 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "beard2"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "patch"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #70"

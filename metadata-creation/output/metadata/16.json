@@ -1,17 +1,17 @@
 {
-    "image": "ipfs://QmPhiYnFKzDzqXZSkMUHSRDrihbJFWLeWDc1kw1Bpiq11Y",
+    "image": "ipfs://QmZ6ZkrWiWUJ5oAV7KuRUHYwqoAqKiGL9YJE6XCWEC72Vw",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineGreenSquare"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard2"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #16"

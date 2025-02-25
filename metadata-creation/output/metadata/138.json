@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://Qme5wWphxU8senfUaiQkVfP8NbRNE1an84Uq8rnmyVjXSK",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "purple"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineGreenSquare"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyBlue"
+        },
+        {
+            "trait_type": "face",
+            "value": "pokerFace"
+        },
+        {
+            "trait_type": "beard",
+            "value": "beard1"
+        },
+        {
+            "trait_type": "hat",
+            "value": "adventureHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #138"
+}

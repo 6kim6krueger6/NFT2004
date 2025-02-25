@@ -4,10 +4,10 @@ const fs = require("fs");
 
 // Данные (адреса и их значения)
 const inputs = [
-    "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
-    "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
-    "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
-    "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+    "0xd149B96b9CD54F9e961E9Ab585696B7898a5b1e1",
+    "0x242a826be7c7acb51e3fdf4ea02ab46966d26217",
+    "0xff49272d0ee8e1e1d4f1ffb846c042d85cb93c6e",
+    "0xa1781b673058244a0455ea752b3354f8e703142b"
 ];
 
 const leafNodes = inputs.map((address) => keccak256(address));

@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmPtkUknhLC9PfRvZUFnnoHyAwaTVwnE2S5W9MfKgRxV1z",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineGreen"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "happy"
+        },
+        {
+            "trait_type": "beard",
+            "value": "beard3"
+        },
+        {
+            "trait_type": "hat",
+            "value": "adventureHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "glasses"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "alkawka"
+        }
+    ],
+    "name": "NFT #147"
+}

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmZM2JRsCeZhwiY1S3qjhAyEs7ABmrD9CvKmBQz412eot5",
+    "image": "ipfs://QmNeTtVtEEUyx3jw4wgStB6Bfse2FkNLVAdpoNXHGLW13B",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #20"

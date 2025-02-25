@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmSeLgmreRSDn1wcwaj1uEBcqv3QpWDC1ifdsfhRHfjj5E",
+    "image": "ipfs://QmcVzWKWbzZUTfJPSbJNDuNGxbUoSvDyPF21r33mcHVC73",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,11 +7,11 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
@@ -27,7 +27,7 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",

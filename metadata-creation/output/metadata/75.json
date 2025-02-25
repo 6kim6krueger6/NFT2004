@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmWa6UQWFq1DxkoaCyB4ptzBZXbrVjf2oiXoh7gmHVB7zv",
+    "image": "ipfs://QmWQawk3z9cbF7nJEGXZspxFZ6Tr13cPARFkF9ygbEJAtu",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineRed"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
@@ -15,23 +15,23 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard3"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #75"

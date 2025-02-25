@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmceijfZDNhVwAcVJX5V1rJhdU8sWDqpAeYVqMqJ2o4e7H",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineDefault"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyBlue"
+        },
+        {
+            "trait_type": "face",
+            "value": "happy"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "no_hat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "alkawka"
+        }
+    ],
+    "name": "NFT #168"
+}

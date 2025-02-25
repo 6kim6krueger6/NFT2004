@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmXUzeDKBQFsy44TEK3VUJFtSBGVwVXBdi1AXuhxD3ARvy",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "purple"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineRed"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyRed"
+        },
+        {
+            "trait_type": "face",
+            "value": "pokerFace"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "no_hat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "patch"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "alkawka"
+        }
+    ],
+    "name": "NFT #192"
+}

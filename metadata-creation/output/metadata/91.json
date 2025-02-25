@@ -1,37 +1,37 @@
 {
-    "image": "ipfs://QmTpcoUJEGcR1yU2VexquDcf3GKMMFzeXs4ZCyup2djoDF",
+    "image": "ipfs://QmaAvFQpyPR8RMGq5XNPfXFR6QjNWpeHofZbySeCWPTKWj",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
-            "value": "patch"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #91"

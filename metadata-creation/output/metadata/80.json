@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmabEA8fVq12hjacZjDQD1MT3gbxxBqDZYian2GKVnJtbP",
+    "image": "ipfs://QmZh3Mqp8dEDLVTMm1E5dXVZLuMeJe1pdG4UifA24Xmbd4",
     "attributes": [
         {
             "trait_type": "background",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #80"

@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmeoHt9Mbto4sbNemGXBSAtVo67RPHSftbY9yrZYfvvWbr",
+    "image": "ipfs://QmNZZzKrTgKt52KZNcgCg58uDFjkqUEFUfVWj4444D7aK1",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
@@ -15,23 +15,23 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #74"

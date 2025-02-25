@@ -1,17 +1,17 @@
 {
-    "image": "ipfs://QmdNDhL3EeSUpvd98jKvkt36TmKpN7DL88JgJZwH3gNJsb",
+    "image": "ipfs://QmfVUVNfo8h8uQ9du5qfQA7faW9PXpYPUspjnRJRuwYHDy",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "gold"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineBlueSquare"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "shirt"
         }
     ],
     "name": "NFT #58"

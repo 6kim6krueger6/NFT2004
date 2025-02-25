@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmVCNirCRcK38PjS4PMG235wDpmiYH3zQJ3FLopfLT4FPh",
+    "image": "ipfs://QmXmtXtqd7qq7EpeW6SZEmMqFnvgZDvMmaARdoz7mKnZnp",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineRed"
         },
         {
             "trait_type": "body",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "patch"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #31"

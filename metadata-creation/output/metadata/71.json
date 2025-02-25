@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmZYxru8PCqd4BXhdAVdodLBRtGJb6pWYAAUuRgQh8GJTN",
+    "image": "ipfs://QmXU3C7GZorxh1KJvsMAsTMLVnFSXh49DSBcadpPqS9d87",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
@@ -15,11 +15,11 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #71"

@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://Qmbj9YDdcGRUbd6eEmLiEBq1Vehrt7e3Fa5emsg3hZmV3H",
+    "image": "ipfs://QmZJNWAQ6D3Xw9LyLFe987VYKmwFtocsb9rtj6DGSgL5H8",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
@@ -19,7 +19,7 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #3"

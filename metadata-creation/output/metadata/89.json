@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmXS7B9y5mQTqijSDLQvHY2xKjuuL7KF92TbGHfvjE9dti",
+    "image": "ipfs://QmV9gnNDqTnevkB5sYU9otLPhH4bpuKQgS8coo8uq1bWfL",
     "attributes": [
         {
             "trait_type": "background",
@@ -11,19 +11,19 @@
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyBlue"
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",

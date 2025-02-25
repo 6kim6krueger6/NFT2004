@@ -1,9 +1,9 @@
 {
-    "image": "ipfs://QmcL7zJyMXHgNkTYDszircG45QkgvEFUvAiF9BSbfUyoFw",
+    "image": "ipfs://QmTojMo6NDtmTTTMJ5Ho6w3vin7xo9V99jr1cSfDEz9MJB",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
@@ -11,11 +11,11 @@
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #59"

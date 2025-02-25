@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmePUMxNowo7ktGGPNgrKyTSa2j1Q2FxpSBTEQC865itxx",
+    "image": "ipfs://QmWQ9kusfNnpDCn5VGnjv3vD6uswGbeU3otyH4EA2M5S3h",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #15"

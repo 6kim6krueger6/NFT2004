@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmQt23zC79puCfdg6Q3CK8feSy3dnpgfTf4Gh5ZXXAuQb1",
+    "image": "ipfs://Qmb8bDZUD1YCJkAKhc3T94szs42PVZZopE2FynPr5XprDh",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,19 +7,19 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "shirt"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #37"

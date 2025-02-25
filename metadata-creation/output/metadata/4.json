@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmU3guvzA3Mte3d7ab7iQnv48RXBYZjZa1Dr5SpHvbvryL",
+    "image": "ipfs://QmTwkKLrZa12zBMtUVqrc1j3eW7iPL1mWPF852Hr1RpmKG",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard2"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "shirt"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #4"

@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmeoxYPtbuQYXaFM5YDWy1U1wFe3bPSmdf2dDqht4pKX6S",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "purple"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineGreenSquare"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "pokerFace"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "cap"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "patch"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "alkawka"
+        }
+    ],
+    "name": "NFT #195"
+}

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmV14uEY9dkLsz1fgdZ6m4PTtdZ1zBR72ebGEqfXurazXL",
+    "image": "ipfs://QmfHU5aYRxZ2tqhXugcPuDwwx4Ham51Ux7Q11bJcbCp6K7",
     "attributes": [
         {
             "trait_type": "background",
@@ -11,7 +11,7 @@
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",

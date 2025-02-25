@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmYLzmx4eusTDNhuq1NQxQDVRf1hrrXEkuGqdwcyPFxwc8",
+    "image": "ipfs://QmbQFUaw6Lh85b6nHmZtkvkTaApJuECBSQRGgHN6kXY9gW",
     "attributes": [
         {
             "trait_type": "background",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "surprised"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",

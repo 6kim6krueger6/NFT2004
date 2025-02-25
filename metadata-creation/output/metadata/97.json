@@ -1,17 +1,17 @@
 {
-    "image": "ipfs://QmUmGLkTaBJKJNDRrhPuB8j732K7AdxikDtuCocNBJ5QPW",
+    "image": "ipfs://QmP3vUoEEeHTaPBvuLyRroTwujg3iLDyeLxJ56P8cLAr6u",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
@@ -23,11 +23,11 @@
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "patch"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",

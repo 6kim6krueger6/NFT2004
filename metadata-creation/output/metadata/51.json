@@ -1,29 +1,29 @@
 {
-    "image": "ipfs://QmT4MGC9U9Syw6SArprSxdyD4Lypg7zQiEshFeSuedkspg",
+    "image": "ipfs://QmTcUpCZnXkrjo8YEnihKt12L3NjpwgYbcuvaV71n7Nfkj",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyGold"
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard2"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",

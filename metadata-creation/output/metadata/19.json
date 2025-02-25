@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmdCmcnsJFwuU7tC97F28ANM65P7ceeJmFZ2mUYXUeqbbW",
+    "image": "ipfs://QmXj48Jv9xAENRerHpFJJ8dcvpLXcHKggjtVWG24oq6YK5",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",

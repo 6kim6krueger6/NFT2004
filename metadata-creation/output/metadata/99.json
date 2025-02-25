@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmdAdkjWNkuDkAsKkS8w5GQ2mD9aJzEELa3T9Xyv7CRTHZ",
+    "image": "ipfs://QmenCzkrGp3B5aP69qNDgDuqBZ6FQhTf1ia3dgXJBvQsLs",
     "attributes": [
         {
             "trait_type": "background",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "jacket"
         }
     ],
     "name": "NFT #99"

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmRR6kA93NVdz9sC3A9thvuUibN2GgkC2aXnUKye3Dn4AA",
+    "image": "ipfs://QmQxyh8amWYRXftgiP9TY7XXvqXc4Tt14unahGfRB7hw6P",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,31 +7,31 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "surprised"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "beard3"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
-            "value": "monocle"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "shirt"
         }
     ],
     "name": "NFT #47"

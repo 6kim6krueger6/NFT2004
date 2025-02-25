@@ -1,21 +1,21 @@
 {
-    "image": "ipfs://QmPwZWMahYeSPeyc7mfSYFCA7SWUE8nQKEkLndD1nVYN9Z",
+    "image": "ipfs://Qmc4FYLxksTZ6uue6wq4o7qpeKNmqMgqWpj4DeBfzwYUcp",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "surprised"
         },
         {
             "trait_type": "beard",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #39"

@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmUgfuBafBNbwRD82SKu9uZnp9mZWpghDT578m5HHZ1DSb",
+    "image": "ipfs://QmfQsLbevVyJe4DHP9NDXhdjNW3VZ6pkc6xAqZk1PayCbY",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineRed"
         },
         {
             "trait_type": "body",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard3"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #2"

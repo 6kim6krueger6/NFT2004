@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmPqu4L8cCMSKZSYPLvdiFXk7zyFf1PnDwAwcXwJpmddiC",
+    "image": "ipfs://QmPfeUEsFtaTUMgnXbRHhZewsGVyBEqyGB3hw753SYoDD6",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
@@ -23,15 +23,15 @@
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "jacket"
         }
     ],
     "name": "NFT #25"

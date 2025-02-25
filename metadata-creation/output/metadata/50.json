@@ -1,17 +1,17 @@
 {
-    "image": "ipfs://Qmcyz3vSn9QuJ3LP1JHA1sBAa9dXUw6W9mgwAPWnpZVhdV",
+    "image": "ipfs://QmVaerHAMvCANr9fGDztCe4G8nmSF2zwJt9dTGu1fn5YV7",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineRed"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyBlue"
         },
         {
             "trait_type": "face",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",

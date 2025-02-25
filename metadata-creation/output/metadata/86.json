@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmVuKxPAXbV6FoNh4qoDSNQpK8xzJ5Ph3iNLP642aT3E8w",
+    "image": "ipfs://QmcTp9F7JCCJsquGmtF3bhEjfyrx7bvSzm8nt6Hs6TBczK",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineBlueSquare"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -19,7 +19,7 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "jacket"
         }
     ],
     "name": "NFT #86"

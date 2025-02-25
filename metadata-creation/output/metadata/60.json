@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmYc6VosGxzitDqNSEND5t9UHbXnUpfsZgtEoFTneomyNH",
+    "image": "ipfs://QmYkFUNFMP1mhouLWJsme5WkRrRWZTfGL8EBspDLiyhjqG",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,19 +7,19 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineRed"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
-            "value": "bodyBlue"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "surprised"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #60"

@@ -1,21 +1,21 @@
 {
-    "image": "ipfs://QmUNbsyKXGvA11NECw7nmYb6Tdu18TXez8GJ5VoW6qEcKL",
+    "image": "ipfs://QmecNH8upecqVaoTU6EDbGHqciRUPhP44MfqucaF8htBvX",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineBlueSquare"
+            "value": "spineRed"
         },
         {
             "trait_type": "body",
-            "value": "bodyBlue"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #21"

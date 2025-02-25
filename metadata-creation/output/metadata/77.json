@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmQYxo2kxscCV3AQC4rqGtVc9GdF7uwUZZEJFqnvrmtP52",
+    "image": "ipfs://QmQpHW7F9Yhuk1s1KnBarBEwPSztEfW8PuXaJvUoCVufjV",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,15 +7,15 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyBlue"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #77"

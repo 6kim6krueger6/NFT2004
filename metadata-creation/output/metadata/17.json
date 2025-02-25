@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmUvATJYMyzQitrRmxJRKQBHU7W7SJeBqQ4PLUut76k7Gy",
+    "image": "ipfs://QmdcMzS7uurbtKnizzzUxydpfp4gjAFddxdhSNtkgPBb42",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
@@ -19,15 +19,15 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "patch"
         },
         {
             "trait_type": "clothes",

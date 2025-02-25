@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmeUnouGruhdPji6eMcARFYcGZQQZzF8vPpi3YRhWyMfuL",
+    "image": "ipfs://QmRyjwMKDYpVTka9A8gGaMy1vfK1jPQLyYZeN6JARDwW4x",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "shirt"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #53"

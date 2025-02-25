@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://Qmbg3Wj24saLcR1Zt4MJ3QZLUQZfkKFACv3tznoF1KBwaH",
+    "image": "ipfs://QmaHpnxGCgdnfD79jdy7wXuHq64fzAZv8Az1zhEo5foAi1",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,11 +7,11 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineRedSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
@@ -19,19 +19,19 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
-            "value": "patch"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #45"

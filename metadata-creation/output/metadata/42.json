@@ -1,29 +1,29 @@
 {
-    "image": "ipfs://QmPWupcsHgtczxX5UsFyP5Yh6CPxpa6tJrb4QBerkPrbgQ",
+    "image": "ipfs://QmZXTHx2rafopYdv1EPE2Y3Rx16JHK8Y7gL5HuPhrFVB5f",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #42"

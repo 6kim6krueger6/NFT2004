@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmbKUShi8XovVqiuguia5Qvyp81it3crK4XkiWeYDMQv87",
+    "image": "ipfs://QmdVtsMNhsv2YGjmFEZoJrHWrNNtEBGKKUezAvTjvd2CUQ",
     "attributes": [
         {
             "trait_type": "background",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",

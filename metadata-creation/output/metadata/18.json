@@ -1,25 +1,25 @@
 {
-    "image": "ipfs://QmRLq1vbN4EmKvB7LatWuq4TQegCAhpyaoTJZEhycvMpwG",
+    "image": "ipfs://QmabPQpCCFWsrDuNaoGWgauF24rdwh4FFftLFpofxDrNxX",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineRed"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "surprised"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard3"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
@@ -27,7 +27,7 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",

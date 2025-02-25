@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmfYrepragBjqix8YSKsL8T4jqqww8cikRL2C9msGPh6SG",
+    "image": "ipfs://QmeDL8u82yc69ygT1Fbg2W3RwfqPiq7oPFZo14rMPfQpid",
     "attributes": [
         {
             "trait_type": "background",
@@ -11,11 +11,11 @@
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #83"

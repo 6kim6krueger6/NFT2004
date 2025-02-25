@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmYKXb5ug948ogZ7JK8Bfxex4FfAg7mfNhiyrmGGee9KFz",
+    "image": "ipfs://QmSc4gCw19WYiyxRPADGbtR6GYnYgnkyYreLhbB242vdfF",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,11 +7,11 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #64"

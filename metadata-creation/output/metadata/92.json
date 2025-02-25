@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmRQ1PS8o1DUTrgyeM2JkbVSmZCYCC3FJ7nBoBqZAXUWTf",
+    "image": "ipfs://QmZPqn6w5414UbWwuv39nnsshVSBTmT6LcXNtYEh8MhCFk",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,15 +7,15 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "surprised"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,15 +23,15 @@
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "shirt"
         }
     ],
     "name": "NFT #92"

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmY3hRLhCc7eRd5hWBoi7NJ25391qdS6Ug8vA5drff9vd5",
+    "image": "ipfs://Qmd4JBiofke5btyL4nfaDaFrbxs3teHHWUPnv25CtkfQPg",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #84"

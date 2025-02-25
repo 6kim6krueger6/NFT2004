@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmVExPBcLzUGYZ1pEAKvjAWUhQ2owsKuN2TMbUAeCXpQ3z",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineGreenSquare"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyRed"
+        },
+        {
+            "trait_type": "face",
+            "value": "angry"
+        },
+        {
+            "trait_type": "beard",
+            "value": "beard3"
+        },
+        {
+            "trait_type": "hat",
+            "value": "no_hat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "jacket"
+        }
+    ],
+    "name": "NFT #160"
+}

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmSpqtvvpGSsMMhZJSAqsfDG3Ma59AHSdzCEWF1Ff8Hsje",
+    "image": "ipfs://QmNvv31r3zX9a6dQVChqdYvasGoyPuyNunwcwcgkbabyW3",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,15 +7,15 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyRed"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,7 +23,7 @@
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "jacket"
         }
     ],
     "name": "NFT #34"

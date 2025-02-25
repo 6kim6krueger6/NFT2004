@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://Qma1ofneHtmZgkK1M12u5N49T5VmgY8HJFrRr3WqDqCHDU",
+    "image": "ipfs://QmSth9ok16ysdntMG7zLvE9MvrMXjyrgLZPujyufcn6Poy",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,15 +7,15 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",

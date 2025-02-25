@@ -1,21 +1,21 @@
 {
-    "image": "ipfs://QmYHE5pJe318ycHq5Hzm8G1cqnccs9y2x6CeN5mYUfXNDw",
+    "image": "ipfs://QmY9hRixk2CktxDLycyJ9T3LDADDfGq1JYFFqfJD8dCkNm",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,15 +23,15 @@
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",
-            "value": "shirt"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #12"

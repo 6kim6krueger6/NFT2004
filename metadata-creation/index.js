@@ -5,9 +5,9 @@ const { createCanvas, loadImage } = require("canvas");
 const { layers, width, height } = require("./config.js");
 const metadataFilePathTxt = "./output/metadata_links.txt"; 
 
-const API_KEY = "62ad575ad3824bda9e8e";
-const API_SECRET = "f5c9ba632943211ed4d4711965566a57b2aec38b3cb005ca2aa0ab1b2f8a4046";
-const edition = 100; // Количество NFT
+const API_KEY = "70d8863cd6b7ed241f17";
+const API_SECRET = "a83429817dfbeb226bb7da0edce8b39196522e869cd58c38c768e969d5a83c0d";
+const edition = 200; // Количество NFT
 const canvas = createCanvas(width, height);
 const ctx = canvas.getContext("2d");
 

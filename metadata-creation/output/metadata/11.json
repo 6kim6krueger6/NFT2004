@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmcUDW1u2Prbr6JY3CbH4DS9g3ZGJ9qa4LjZakcmcMQUq5",
+    "image": "ipfs://QmNvyqrFEbQgkF7AoBFh2wqBkXdcptjtLsHfMPqW9LXesp",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "blue"
+            "value": "purple"
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineDefault"
         },
         {
             "trait_type": "body",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "cap"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #11"

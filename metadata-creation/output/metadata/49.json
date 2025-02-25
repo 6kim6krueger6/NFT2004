@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmZe3SLDTDUdShqVCLXuyHeTsKjCUSDDnApxczcHdS4hLB",
+    "image": "ipfs://QmedUDFMZpzYUtDNw1dKqhvUoDqaiumwKRytAarKqUFxv5",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "beard2"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "shirt"
         }
     ],
     "name": "NFT #49"

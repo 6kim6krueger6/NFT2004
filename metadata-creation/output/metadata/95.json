@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmaN9Zsase4c2qZXiao24wE9iEDD6tT4TahWjzHoWVdNYU",
+    "image": "ipfs://QmUCSi1nNAd2U27anFD5odtYo4hBmtZDpuSpxndRtRt98b",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,15 +23,15 @@
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #95"

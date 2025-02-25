@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmWSCJn2iFtE8V6HQpFoRQNZJosxdeG4kBAWYSCWTH1YA2",
+    "image": "ipfs://QmRuTUQCN8i7yaetqTDJf74zeKWz7anr4eGjmzryV3pxdx",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefaultSquare"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
@@ -15,11 +15,11 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "patch"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #26"

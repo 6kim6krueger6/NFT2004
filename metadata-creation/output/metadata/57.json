@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmSwv713sNWgVWAHZtiFKi9w9Rww6eB9PBhPyhr89nMDBV",
+    "image": "ipfs://QmfY9k7ZJji9VRSFdoA2oNGsyrHgriwYDFppWXNZYT4jVX",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,19 +7,19 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
@@ -27,11 +27,11 @@
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "monocle"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #57"

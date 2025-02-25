@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmQdC8EjELDX9cdCWn3zJWRrTshytR1MLLGDx37oRCoP7h",
+    "image": "ipfs://QmY8icka9G15B3QtfpU5HNihxk2CUXEomQM7Mxf8ThtQH6",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,11 +7,11 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyBlue"
         },
         {
             "trait_type": "face",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "beard3"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #93"

@@ -1,37 +1,37 @@
 {
-    "image": "ipfs://QmbviYBBsnSjfWN8D3CkGNKEgRSk6TZyYYjZsi6uAT2pmL",
+    "image": "ipfs://QmVnFbw6wVWCi5aBcwEjgMyCDiR4G7ESfSt4tB5AG33WZV",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineBlue"
+            "value": "spineGreen"
         },
         {
             "trait_type": "body",
-            "value": "bodyBlue"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "angry"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "adventureHat"
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "shirt"
         }
     ],
     "name": "NFT #68"

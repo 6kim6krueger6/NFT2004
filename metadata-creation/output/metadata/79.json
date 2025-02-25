@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmePzaUgeKCdtvofyX7Z8uftwdqvM3akBeJDVTMYQVMi2X",
+    "image": "ipfs://QmRdwmA4MzDKos9VBvGn3pQ1p2v6xZoR1RZ712fWv3eibV",
     "attributes": [
         {
             "trait_type": "background",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",

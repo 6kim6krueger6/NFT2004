@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmfKYi2fyr9MTi77aYks1jiezPfifoMoAAaeKicvHNzMB3",
+    "image": "ipfs://QmNfvGBSBYfu6bMpyj5tvFC2TyabaNPbLRM3WXNLKESBSG",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlueSquare"
         },
         {
             "trait_type": "body",
@@ -19,19 +19,19 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "no_hat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
-            "value": "default_accessories"
+            "value": "glasses"
         },
         {
             "trait_type": "clothes",
-            "value": "no_clothes"
+            "value": "jacket"
         }
     ],
     "name": "NFT #13"

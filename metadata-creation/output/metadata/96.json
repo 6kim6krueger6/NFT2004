@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmNjGnBkbjig8AmjAevyLYP4Vk639vNQ5qAT8hQyZCt5DA",
+    "image": "ipfs://QmWE7L6mtGtf2Ni9WhDdShGKB1yy5eAhYLqWpXdfr3BjAk",
     "attributes": [
         {
             "trait_type": "background",
@@ -11,27 +11,27 @@
         },
         {
             "trait_type": "body",
-            "value": "bodyRed"
+            "value": "bodyGreen"
         },
         {
             "trait_type": "face",
-            "value": "happy"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard3"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "no_hat"
         },
         {
             "trait_type": "accessories",
-            "value": "patch"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #96"

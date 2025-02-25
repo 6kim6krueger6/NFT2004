@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmSNZknFpKwKFdW81PUtt8SQ1GdCamnyoHGXpvtzTPzQeE",
+    "image": "ipfs://QmVLoYLRiRMoF38XaNX8KBv2WtVDFZygbYVVuhbyrL3tVo",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,7 +7,7 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreenSquare"
+            "value": "spineDefaultSquare"
         },
         {
             "trait_type": "body",
@@ -15,15 +15,15 @@
         },
         {
             "trait_type": "face",
-            "value": "pokerFace"
+            "value": "happy"
         },
         {
             "trait_type": "beard",
-            "value": "beard1"
+            "value": "no_beard"
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "jacket"
+            "value": "alkawka"
         }
     ],
     "name": "NFT #62"

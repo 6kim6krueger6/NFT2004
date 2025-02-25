@@ -1,13 +1,13 @@
 {
-    "image": "ipfs://QmTwgMdq9ya3CrnFyPLCBURkUV3iMHjbuHLVGfcjdb7QzE",
+    "image": "ipfs://Qmeus76FJE154mwCThDNi7wFHBLMdy4FvUpkeaYCPhPQoo",
     "attributes": [
         {
             "trait_type": "background",
-            "value": "purple"
+            "value": "blue"
         },
         {
             "trait_type": "spine",
-            "value": "spineDefault"
+            "value": "spineBlue"
         },
         {
             "trait_type": "body",
@@ -15,7 +15,7 @@
         },
         {
             "trait_type": "face",
-            "value": "angry"
+            "value": "pokerFace"
         },
         {
             "trait_type": "beard",
@@ -23,15 +23,15 @@
         },
         {
             "trait_type": "hat",
-            "value": "adventureHat"
+            "value": "winterHat"
         },
         {
             "trait_type": "accessories",
-            "value": "glasses"
+            "value": "default_accessories"
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #87"

@@ -1,5 +1,5 @@
 {
-    "image": "ipfs://QmWyX2ojmfHazKpBwjUycJ9yYFd9u5WFcFNmPv7BfC465z",
+    "image": "ipfs://QmfPrj57fTVcb2TFxc66ifwUuc76Gi7X3huqLGAxGjw7hr",
     "attributes": [
         {
             "trait_type": "background",
@@ -7,11 +7,11 @@
         },
         {
             "trait_type": "spine",
-            "value": "spineGreen"
+            "value": "spineGreenSquare"
         },
         {
             "trait_type": "body",
-            "value": "bodyGreen"
+            "value": "bodyBlue"
         },
         {
             "trait_type": "face",
@@ -19,11 +19,11 @@
         },
         {
             "trait_type": "beard",
-            "value": "no_beard"
+            "value": "beard1"
         },
         {
             "trait_type": "hat",
-            "value": "winterHat"
+            "value": "cap"
         },
         {
             "trait_type": "accessories",
@@ -31,7 +31,7 @@
         },
         {
             "trait_type": "clothes",
-            "value": "alkawka"
+            "value": "no_clothes"
         }
     ],
     "name": "NFT #72"

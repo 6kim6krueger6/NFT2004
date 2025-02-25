@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmUJ5WXH9yGmjekcQe5sWYExJEcid3vzgpaHsekDMhDF2k",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineRedSquare"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGreen"
+        },
+        {
+            "trait_type": "face",
+            "value": "angry"
+        },
+        {
+            "trait_type": "beard",
+            "value": "beard2"
+        },
+        {
+            "trait_type": "hat",
+            "value": "adventureHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "monocle"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "no_clothes"
+        }
+    ],
+    "name": "NFT #196"
+}

@@ -1,0 +1,38 @@
+{
+    "image": "ipfs://QmZfJhS9R7zkMdS2YdfmgxFZZshap8yPGieMigmZrrjiA8",
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "spine",
+            "value": "spineGreenSquare"
+        },
+        {
+            "trait_type": "body",
+            "value": "bodyGold"
+        },
+        {
+            "trait_type": "face",
+            "value": "surprised"
+        },
+        {
+            "trait_type": "beard",
+            "value": "no_beard"
+        },
+        {
+            "trait_type": "hat",
+            "value": "adventureHat"
+        },
+        {
+            "trait_type": "accessories",
+            "value": "default_accessories"
+        },
+        {
+            "trait_type": "clothes",
+            "value": "shirt"
+        }
+    ],
+    "name": "NFT #154"
+}
