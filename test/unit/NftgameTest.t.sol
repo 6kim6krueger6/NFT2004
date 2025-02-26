@@ -107,42 +107,41 @@ contract NFTgameTest is Test {
         _;
     }
 
-
     function testGameOutcome() public twoUsersMinted {
-    // Начинаем игру от имени USER1
-    vm.startPrank(USER1);
-    uint256 tokenId1 = 0; // Предположим, что USER1 получил токен с ID 0
-    nft.approve(address(nftgame), tokenId1); // Разрешение на передачу токена
-    nftgame.startTheGame(tokenId1);
-    vm.stopPrank();
+        // Начинаем игру от имени USER1
+        vm.startPrank(USER1);
+        uint256 tokenId1 = 0; // Предположим, что USER1 получил токен с ID 0
+        nft.approve(address(nftgame), tokenId1); // Разрешение на передачу токена
+        nftgame.startTheGame(tokenId1);
+        vm.stopPrank();
 
-    // USER2 присоединяется к игре
-    vm.startPrank(USER2);
-    uint256 tokenId2 = 1; // Предположим, что USER2 получил токен с ID 1
-    nft.approve(address(nftgame), tokenId2); // Разрешение на передачу токена
-    nftgame.joinTheGame(1, tokenId2);
-    vm.stopPrank();
+        // USER2 присоединяется к игре
+        vm.startPrank(USER2);
+        uint256 tokenId2 = 1; // Предположим, что USER2 получил токен с ID 1
+        nft.approve(address(nftgame), tokenId2); // Разрешение на передачу токена
+        nftgame.joinTheGame(1, tokenId2);
+        vm.stopPrank();
 
-    // Симулируем получение случайных чисел от Chainlink VRF
-    uint256[] memory randomWords = new uint256[](2);
-    randomWords[0] = 500; // Случайное число для USER1
-    randomWords[1] = 700; // Случайное число для USER2
+        // Симулируем получение случайных чисел от Chainlink VRF
+        uint256[] memory randomWords = new uint256[](2);
+        randomWords[0] = 500; // Случайное число для USER1
+        randomWords[1] = 700; // Случайное число для USER2
 
-    // Вызываем fulfillRandomWords для обоих запросов
-    uint256[] memory requestIds = nftgame.getGameRequests(1);
-    vrfCoordinator.fulfillRandomWords(requestIds[0], address(nftgame));
-    vrfCoordinator.fulfillRandomWords(requestIds[1], address(nftgame));
+        // Вызываем fulfillRandomWords для обоих запросов
+        uint256[] memory requestIds = nftgame.getGameRequests(1);
+        vrfCoordinator.fulfillRandomWords(requestIds[0], address(nftgame));
+        vrfCoordinator.fulfillRandomWords(requestIds[1], address(nftgame));
 
-    // Проверяем, что USER2 выиграл и получил NFT от USER1
-    assertEq(nft.ownerOf(tokenId1), USER2, "USER2 should own USER1's NFT after winning");
-    assertEq(nft.ownerOf(tokenId2), USER2, "USER2 should still own their own NFT");
+        // Проверяем, что USER2 выиграл и получил NFT от USER1
+        assertEq(nft.ownerOf(tokenId1), USER2, "USER2 should own USER1's NFT after winning");
+        assertEq(nft.ownerOf(tokenId2), USER2, "USER2 should still own their own NFT");
 
-    // Проверяем, что событие GameResult было вызвано с правильными параметрами
-    vm.expectEmit(true, true, true, true);
-    emit NFTgame.GameResult(USER2, 1, true);
+        // Проверяем, что событие GameResult было вызвано с правильными параметрами
+        vm.expectEmit(true, true, true, true);
+        emit NFTgame.GameResult(USER2, 1, true);
 
-    // Проверяем, что игра завершена
-    (, , , , , , , bool fulfilled, , , ) = nftgame.getGame(1);
-    assertTrue(fulfilled, "Game should be fulfilled");
-}
+        // Проверяем, что игра завершена
+        (,,,,,,, bool fulfilled,,,) = nftgame.getGame(1);
+        assertTrue(fulfilled, "Game should be fulfilled");
+    }
 }

@@ -7,7 +7,7 @@ import {NFTgame} from "../src/NFTgame.sol";
 
 contract NFTdeploy is Script {
     NFT public nft;
-    // NFTgame public nftgame;
+    NFTgame public nftgame;
     uint256 public constant SUB_ID = 86906349064437370453981867026856126551436515075430136612035847446893057741160;
     uint256 public constant ARBI_SUB_ID = 53908118885474722263942425361989802159991757705438179707859027354892638640928;
 
@@ -20,10 +20,10 @@ contract NFTdeploy is Script {
     function run() public {
         vm.startBroadcast();
         console.log("Deploying NFT contract...");
-        nft = new NFT(ARBI_VRF_COORDINATOR, ARBI_SUB_ID);
-        // nftgame = new NFTgame(NFT_ADDRESS, VRF_COORDINATOR, SUB_ID);
+        nft = new NFT(VRF_COORDINATOR, ARBI_SUB_ID);
+        nftgame = new NFTgame(NFT_ADDRESS, VRF_COORDINATOR, SUB_ID);
         console.log("NFT contract deployed at:", address(nft));
-        // console.log("NFTgame contract deployed at:", address(nftgame));
+        console.log("NFTgame contract deployed at:", address(nftgame));
         vm.stopBroadcast();
     }
 }

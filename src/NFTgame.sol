@@ -55,10 +55,10 @@ contract NFTgame is VRFConsumerBaseV2Plus {
     uint256 public s_gameId;
     GameState public s_gameState;
 
-    // bytes32 private constant KEY_HASH = 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae;
-    bytes32 private constant ARBI_KEY_HASH = 0x1770bdc7eec7771f7ba4ffd640f34260d7f095b79c92d34a5b2551d6f6cfd2be;
+    bytes32 private constant KEY_HASH = 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae;
+    // bytes32 private constant ARBI_KEY_HASH = 0x1770bdc7eec7771f7ba4ffd640f34260d7f095b79c92d34a5b2551d6f6cfd2be;
 
-    uint32 private constant GAS_LIMIT = 2000000;
+    uint32 private constant GAS_LIMIT = 2500000;
     uint32 private constant NUM_WORDS = 1;
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
 
@@ -134,7 +134,7 @@ contract NFTgame is VRFConsumerBaseV2Plus {
         //creating 2 requests for 2 random numbers
         uint256 requestId1 = s_vrfCoordinator.requestRandomWords(
             VRFV2PlusClient.RandomWordsRequest({
-                keyHash: ARBI_KEY_HASH,
+                keyHash: KEY_HASH,
                 subId: s_subId,
                 requestConfirmations: REQUEST_CONFIRMATIONS,
                 callbackGasLimit: GAS_LIMIT,
@@ -145,7 +145,7 @@ contract NFTgame is VRFConsumerBaseV2Plus {
 
         uint256 requestId2 = s_vrfCoordinator.requestRandomWords(
             VRFV2PlusClient.RandomWordsRequest({
-                keyHash: ARBI_KEY_HASH,
+                keyHash: KEY_HASH,
                 subId: s_subId,
                 requestConfirmations: REQUEST_CONFIRMATIONS,
                 callbackGasLimit: GAS_LIMIT,
@@ -205,17 +205,19 @@ contract NFTgame is VRFConsumerBaseV2Plus {
 
     function determineWinner(uint256 gameId) internal {
         Game storage game = s_games[gameId];
-       if (!IERC721(s_nftContract).isApprovedForAll(game.player1, address(this))
-        || IERC721(s_nftContract).getApproved(game.tokenId1) != address(this)
-    ) {
-    revert NotApprovedForNFT1();
-    }
+        if (
+            !IERC721(s_nftContract).isApprovedForAll(game.player1, address(this))
+                || IERC721(s_nftContract).getApproved(game.tokenId1) != address(this)
+        ) {
+            revert NotApprovedForNFT1();
+        }
 
-    if (!IERC721(s_nftContract).isApprovedForAll(game.player2, address(this))
-        || IERC721(s_nftContract).getApproved(game.tokenId2) != address(this)
-    ) {
-    revert NotApprovedForNFT2();
-    }
+        if (
+            !IERC721(s_nftContract).isApprovedForAll(game.player2, address(this))
+                || IERC721(s_nftContract).getApproved(game.tokenId2) != address(this)
+        ) {
+            revert NotApprovedForNFT2();
+        }
 
         if (game.randomNumber1 > game.randomNumber2) {
             game.isWinner1 = true;

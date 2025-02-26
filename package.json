@@ -1,0 +1,27 @@
+{
+  "name": "massive-nft-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6kim6krueger6/NFT2004.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6kim6krueger6/NFT2004/issues"
+  },
+  "homepage": "https://github.com/6kim6krueger6/NFT2004#readme",
+  "description": "",
+  "dependencies": {
+    "@pythnetwork/entropy-sdk-solidity": "^1.5.0"
+  }
+}
