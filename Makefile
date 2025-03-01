@@ -18,4 +18,4 @@ deploy-arbitrum:
 	@forge script script/NFTdeploy.s.sol:NFTdeploy $(ARBITRUM_NETWORK_ARGS)
 
 deploy-monad:
-	@forge script script/NFTdeploy.s.sol:NFTdeploy $(MONAD_NETWORK_ARGS)
+	@forge script script/NFTmonadDeploy.s.sol:NFTmonadDeploy $(MONAD_NETWORK_ARGS)

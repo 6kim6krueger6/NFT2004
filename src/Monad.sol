@@ -4,32 +4,20 @@ pragma solidity ^0.8.20;
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import {MerkleProof} from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import {Strings} from "@openzeppelin/contracts/utils/Strings.sol";
-import {ERC2981} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol";
+import {ERC2981} from "@openzeppelin/contracts/token/common/ERC2981.sol";
 
-import {IEntropyConsumer} from "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol";
-import {IEntropy} from "@pythnetwork/entropy-sdk-solidity/IEntropy.sol";
-
-contract NFTmonad is ERC721, ERC2981, IEntropyConsumer {
+contract Monad is ERC721, ERC2981 {
     error addressNotFound();
     error notEnoughFunds();
     error alreadyMinted();
     error failedWithdrawal();
     error TokenUriNotFound();
     error mintIsOver();
-    error requestNotFound();
 
     // MINT INFORMATION
     enum MintState {
         OPEN,
         CLOSED
-    }
-
-    // VRF INFORMATION
-    struct RequestStatus {
-        bool fulfilled;
-        bool exists;
-        bytes32 randomNumber;
-        address minter;
     }
 
     uint256 private s_tokenCounter;
@@ -42,27 +30,21 @@ contract NFTmonad is ERC721, ERC2981, IEntropyConsumer {
     // MERKLE ROOTS
     bytes32 private constant MERKLE_ROOT = 0x3598678e8e03d37d8142773eee52c9e6b879fb9a8864011cb31eda78c38b0153;
 
-    IEntropy public entropy;
-
     mapping(uint256 tokenId => string tokenUri) s_tokenToUri;
     mapping(address account => bool) s_hasMinted;
-    mapping(uint256 => RequestStatus) public s_requests;
     mapping(uint256 => bool) public s_UriExists;
 
     // EVENTS
     event CreatedNFT(uint256 indexed tokenId, address indexed minter, string tokenUri);
-    event RequestFulfilled(uint256 indexed requestId, bytes32 randomNumber);
     event MintError(address indexed user, string reason);
     event WithdrawalError(address indexed user, string reason);
     event MintSuccessful(address indexed user, uint256 tokenId);
-    event RandomRequestCreated(uint256 indexed requestId, address indexed user);
 
-    constructor(address _entropy) ERC721("DinoDuels", "DD") {
+    constructor() ERC721("DinoDuels", "DD") {
         s_tokenCounter = 0;
         _setDefaultRoyalty(msg.sender, ROYALTY_PERCENTAGE);
         i_mintDeadline = block.timestamp + MINT_TIME;
         s_mintState = MintState.OPEN;
-        entropy = IEntropy(_entropy);
     }
 
     // MINT FUNCTION
@@ -78,13 +60,15 @@ contract NFTmonad is ERC721, ERC2981, IEntropyConsumer {
             revert alreadyMinted();
         }
 
-        bytes32 userRandomNumber = keccak256(abi.encodePacked(msg.sender, block.timestamp));
-        uint256 requestId = uint256(userRandomNumber);
-        requestRandomNumber(userRandomNumber);
-        s_requests[requestId].minter = msg.sender;
-        s_hasMinted[msg.sender] = true;
+        uint256 tokenId = s_tokenCounter;
+        string memory tokenUri = string(abi.encodePacked(_baseURI(), Strings.toString(tokenId), ".json"));
 
-        emit RandomRequestCreated(requestId, msg.sender);
+        s_tokenToUri[tokenId] = tokenUri;
+        s_hasMinted[msg.sender] = true;
+        _safeMint(msg.sender, tokenId);
+        emit MintSuccessful(msg.sender, tokenId);
+        emit CreatedNFT(tokenId, msg.sender, tokenUri);
+        s_tokenCounter++;
     }
 
     function _baseURI() internal pure override returns (string memory) {
@@ -127,57 +111,11 @@ contract NFTmonad is ERC721, ERC2981, IEntropyConsumer {
         }
     }
 
-    function requestRandomNumber(bytes32 userRandomNumber) internal {
-        // Get the default provider and the fee for the request
-        address entropyProvider = entropy.getDefaultProvider();
-        uint256 fee = entropy.getFee(entropyProvider);
-
-        // Request the random number with the callback
-        uint64 sequenceNumber = entropy.requestWithCallback{value: fee}(entropyProvider, userRandomNumber);
-
-        // Store the sequence number to identify the callback request
-        uint256 requestId = uint256(sequenceNumber);
-        s_requests[requestId] = RequestStatus({randomNumber: 0, exists: true, fulfilled: false, minter: msg.sender});
-    }
-
-    function entropyCallback(uint64 sequenceNumber, address, /* provider */ bytes32 randomNumber) internal override {
-        if (!s_requests[sequenceNumber].exists) {
-            emit MintError(msg.sender, "Request ID not found.");
-            revert requestNotFound();
-        }
-
-        RequestStatus storage request = s_requests[sequenceNumber];
-        request.fulfilled = true;
-        request.randomNumber = randomNumber;
-
-        address minter = request.minter;
-        uint256 uriId = uint256(randomNumber) % 200;
-
-        while (s_UriExists[uriId]) {
-            uriId = uint256(keccak256(abi.encode(randomNumber, uriId, block.timestamp))) % 200;
-        }
-
-        string memory tokenUri = string(abi.encodePacked(_baseURI(), Strings.toString(uriId), ".json"));
-
-        s_UriExists[uriId] = true;
-        s_tokenToUri[s_tokenCounter] = tokenUri;
-        _safeMint(minter, s_tokenCounter);
-        emit MintSuccessful(minter, s_tokenCounter);
-        emit CreatedNFT(s_tokenCounter, minter, tokenUri);
-        s_tokenCounter++;
-
-        emit RequestFulfilled(sequenceNumber, randomNumber);
-    }
-
     function getMintState() public view returns (MintState) {
         return s_mintState;
     }
 
     function getTokenCounter() public view returns (uint256) {
         return s_tokenCounter;
-    }
-
-    function getEntropy() internal view override returns (address) {
-        return address(entropy);
     }
 }
